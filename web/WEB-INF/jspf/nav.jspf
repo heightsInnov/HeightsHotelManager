@@ -1,0 +1,145 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<header class="header dark-bg">
+	<div class="toggle-nav">
+		<div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+	</div>
+
+	<!--logo start-->
+	<a href="index.jsp" class="logo">Heights <span class="lite">Hotel Manager</span></a>
+	<!--logo end-->
+
+	<div class="nav search-row" id="top_menu">
+		<!--  search form start -->
+		<ul class="nav top-menu">                    
+			<li>
+				<form class="navbar-form">
+					<input class="form-control" placeholder="Search" type="text">
+				</form>
+			</li>                    
+		</ul>
+		<!--  search form end -->                
+	</div>
+
+	<div class="top-nav notification-row">                
+		<!-- notificatoin dropdown start-->
+		<ul class="nav pull-right top-menu">
+
+			<!-- task notificatoin start -->
+			<li id="task_notificatoin_bar" class="dropdown">
+				<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+					<i class="icon-task-l"></i>
+					<span class="badge bg-important"></span>
+				</a>
+			</li>
+			<!-- task notificatoin end -->
+			<!-- inbox notificatoin start-->
+			<li id="mail_notificatoin_bar" class="dropdown">
+				<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+					<i class="icon-envelope-l"></i>
+					<span class="badge bg-important"></span>
+				</a>
+			</li>
+			<!-- inbox notificatoin end -->
+			<!-- alert notification start-->
+			<li id="alert_notificatoin_bar" class="dropdown">
+				<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+					<i class="icon-bell-l"></i>
+					<span class="badge bg-important"></span>
+				</a>
+			</li>
+			<!-- alert notification end-->
+			<!-- user login dropdown start-->
+			<li class="dropdown">
+				<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+					<span class="profile-ava">
+						<img alt="" src="img/avatar1_small.jpg">
+					</span>
+					<span class="username">${requestScope.staffName}</span>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu extended logout">
+					<div class="log-arrow-up"></div>
+					<li class="eborder-top">
+						<a href="#"><i class="icon_profile"></i> My Profile</a>
+					</li>
+					<li>
+						<a href="login.jsp"><i class="icon_key_alt"></i> Log Out</a>
+					</li>
+				</ul>
+			</li>
+			<!-- user login dropdown end -->
+		</ul>
+		<!-- notificatoin dropdown end-->
+	</div>
+</header>      
+<!--header end-->
+
+<!--sidebar start-->
+<aside>
+	<div id="sidebar"  class="nav-collapse ">
+		<!-- sidebar menu start-->
+		<ul class="sidebar-menu">                
+			<li class="active">
+				<a class="" href="index.jsp">
+					<i class="icon_house_alt"></i>
+					<span>Dashboard</span>
+				</a>
+			</li>
+			<li class="sub-menu">
+				<a href="javascript:;" class="">
+					<i class="icon_contacts"></i>
+					<span>Guest</span>
+					<span class="menu-arrow arrow_carrot-right"></span>
+				</a>
+				<ul class="sub">
+					<li><a class="" href="../HeightsHotelManager/checkin.jsp">Check In</a></li>                          
+					<li><a class="" href="../HeightsHotelManager/checkout.jsp">Check Out</a></li>
+				</ul>
+			</li>       
+			<li class="sub-menu">
+				<a href="javascript:;" class="">
+					<i class="icon_document_alt"></i>
+					<span>Report</span>
+					<span class="menu-arrow arrow_carrot-right"></span>
+				</a>
+				<ul class="sub">
+					<li><a class="" href="general.html">Guest</a></li>
+					<li><a class="" href="buttons.html">Transactions</a></li>
+					<li><a class="" href="grids.html">Bookings</a></li>
+				</ul>
+			</li>
+			<li class="sub-menu">
+				<a href="javascript:;" class="">
+					<i class="icon_desktop"></i>
+					<span>Setup</span>
+					<span class="menu-arrow arrow_carrot-right"></span>
+				</a>
+				<ul class="sub">                          
+					<li><a class="" href="profile.html">Register Staff</a></li>
+					<li><a class="" href="login.html"><span>Add Facility</span></a></li>
+					<li><a class="" href="blank.html">Add Rooms</a></li>
+					<li><a class="" href="404.html">Add Category</a></li>
+				</ul>
+			</li>
+		</ul>
+		<!-- sidebar menu end-->
+	</div>
+</aside>
+<!--sidebar end-->
+
+<!--breadcrumbs start-->
+<section id="main-content">
+	<section class="wrapper">            
+		<!--overview start-->
+		<div class="row">
+			<div class="col-lg-12">
+				<h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
+				<ol class="breadcrumb">
+					<li><i class="fa fa-home"></i><a href="index.jsp">Home</a></li>
+					<li><i class="fa fa-laptop"></i>Dashboard</li>						  	
+				</ol>
+			</div>
+		</div>
+		<!--breadcrumbs end-->
